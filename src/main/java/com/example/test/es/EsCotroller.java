@@ -14,7 +14,7 @@ public class EsCotroller {
 
     @RequestMapping("test")
     public Object get(){
-        System.out.println(123);
+        System.out.println(456);
         Pageable page = PageRequest.of(0, 10);
         return projDocRepository.findAll(page);
     }
